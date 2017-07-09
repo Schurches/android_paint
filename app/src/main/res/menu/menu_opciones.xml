@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/Dibujar"
+        android:title="@string/Lapiz"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/Borrar"
+        android:title="@string/Borrador"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/Limpiar"
+        android:title="@string/Limpiar"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="always"
+        />
+
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Lapiz">Brush</string>
+    <string name="Borrador">Eraser</string>
+    <string name="Limpiar">Clear All</string>
+
+</resources>
