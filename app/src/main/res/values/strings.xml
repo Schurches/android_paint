@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">CelPaint</string>
+    <string name="app_name">Paint</string>
+    <string name="title_activity_main2">Characteristics</string>
+    <string name="strokeWidthLabel">Stroke width: </string>
+    <string name="checkBoxLabel1">RGB</string>
+    <string name="checkBoxLabel2">HEX</string>
+    <string name="RGBAlert">set between[0,255]</string>
+    <string name="RGBAlert2">All Fields must be filled</string>
+    <string name="staticListTitle">Solid colors</string>
+    <string name="eraseLabel">eraser</string>
+    <string name="clearAlert">WARNING! The whole paint will be deleted</string>
+    <string name="saveAlert">Do you want to save this drawing?</string>
+    <string name="saveName">Please set a name for this file.</string>
+    <string name="saveNameAlert">This field must not be empty.</string>
+    <string name="saveButton">Save</string>
+    <string name="setButton">Set</string>
+    <string name="hintRGB">255</string>
+    <string name="hintHEX">000000</string>
+    <string name="hintStroke">10</string>
+    <string name="acceptButton">Done</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="currentColor">CURRENT</string>
 </resources>

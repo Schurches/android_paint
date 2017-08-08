@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context="com.example.steven.celpaint.PropertiesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="2">
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton1"
+                android:backgroundTint="@color/colorRED"/>
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton2"
+                android:backgroundTint="@color/colorBLUE"/>
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton3"
+                android:backgroundTint="@color/colorGREEN"/>
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton4"
+                android:backgroundTint="@color/colorPINK"/>
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton5"
+                android:backgroundTint="@color/colorYELLOW"/>
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton6"
+                android:backgroundTint="@color/colorBROWN"/>
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton7"
+                android:backgroundTint="@color/colorWHITE"
+                android:text="@string/eraseLabel"
+                android:textColor="@color/colorAccent"/>
+
+            <Button style="@style/colorButtons"
+                android:id="@+id/colorButton8"/>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/verticalPadding">
+
+            <CheckBox
+                android:id="@+id/HEXRGBCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBoxLabel2"
+                android:visibility="gone"
+                android:onClick="changeHEXState"/>
+
+            <EditText
+                android:id="@+id/redEDT"
+                style="@style/editTextMargins"
+                android:hint="@string/hintRGB"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/greenEDT"
+                style="@style/editTextMargins"
+                android:hint="@string/hintRGB"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/blueEDT"
+                style="@style/editTextMargins"
+                android:hint="@string/hintRGB"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/hexEDT"
+                style = "@style/editTextMargins"
+                android:hint="@string/hintHEX"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/setButton"
+                style = "@style/buttons"
+                android:paddingRight="@dimen/horizontalPadding"
+                android:text="@string/setButton"
+                android:onClick="establishColor"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/verticalPadding">
+
+        <TextView
+            android:id="@+id/strokeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strokeWidthLabel"
+            />
+
+        <EditText
+            android:id="@+id/strokeSizeEDT"
+            style="@style/editTextMargins"
+            android:inputType="number"
+            android:hint="@string/hintStroke"
+            android:onClick="setStrokeWidth"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/verticalPadding"
+        android:gravity="center">
+
+        <Button
+            style = "@style/buttons"
+            android:id="@+id/acceptButton"
+            android:paddingRight="@dimen/horizontalPadding"
+            android:text="@string/acceptButton"
+            android:onClick="finalizar"/>
+
+        <Space
+            android:layout_width="@dimen/space"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style = "@style/buttons"
+            android:id="@+id/cancelButton"
+            android:paddingLeft="@dimen/horizontalPadding"
+            android:text="@string/cancelButton"
+            android:onClick="finalizar"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
